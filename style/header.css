@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* 	Title: 			Header CSS
+	Description: 	Styles für den Header
+	Author:			Daniel Swiatek
+	Matrikel-Nr.	530805
+ */
+
+.header {
+	min-height: 30px;
+	overflow: hidden;
+	background: #1abc9c;
+	color: #ecf0f1;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.header > a {
+	color: #ecf0f1;
+}	
+
+.header > .brand {
+	font-weight: 100;
+	font-size: 1.3em;
+	float: left;
+	padding: 20px;
+	margin-left: 10px;
+}
+.header >.nav {
+	float: right;
+	padding-right: 15px;
+}
+.header > .nav li{
+	list-style: none;
+	float: left;
+	padding: 23px 15px 24px 15px;
+}
+.header > .nav li:hover {
+	background: #fff;
+	color: #1abc9c;
+}
+

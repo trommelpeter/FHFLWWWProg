@@ -1,0 +1,74 @@
+	  	<h2> Single Picture</h2>
+          <div class="row">
+            <div class="col-12">
+              <div class="single"><img src="<?php echo $this->Getpath() ?>" id="singleImage" title="<?php echo $this->Gettitle() ?>" width=" 100%"/></div>
+            </div>
+            
+            <?php
+				$images = Data::GetImagesData();
+				if((count($images))!=$this->GetUid()):
+			 ?>
+           	<input type="button" value="Next" href="?ImgUiD=<?php echo $this->Getuid()+1 ?>" class="button next"/>
+            <?php  else : ?>
+            	<input type="button" value="Next" href="?ImgUiD=1" class="button next"/>
+			 <?php endif;?>
+			
+            
+            <!-- col12 end-->
+            <div class="col-4">Kamerahersteller</div>
+            <div class="col-8"><?php echo $this->Getexif()['Manufacturer']?></div>
+            <div class="col-4">Kameramodell</div>
+            <div class="col-8"><?php echo $this->Getexif()['Model']?></div>
+            <div class="col-4">Kompression</div>
+            <div class="col-8"><?php echo $this->Getexif()['Compression']?></div>
+            <div class="col-4">Belichtungszeit</div>
+            <div class="col-8"><?php echo $this->Getexif()['Exposure Time']?></div>
+            <div class="col-4">Blende</div>
+            <div class="col-8"><?php echo $this->Getexif()['FNumber']?></div>
+            <div class="col-4">Blitz</div>
+            <div class="col-8"><?php echo $this->Getexif()['Flash']?></div>
+            <div class="col-4">ISO</div>
+            <div class="col-8"><?php echo $this->Getexif()['ISO']?></div>
+            <div class="col-4">Date an Time</div>
+            <div class="col-8"><?php echo $this->Getexif()['Date and Time']?></div>
+          </div>
+          <!--row end-->
+          <div class="row">
+            <div class="comment" >  
+            <h2>Leave a comment</h2><input type="submit" value="Write Comment" class="comment button" />
+              <div class="commentinput">
+               
+                <form>
+                  <fieldset>
+                    <ul>
+                      <li>
+                        <label for="name">Name</label>
+                        <input type="name" placeholder="Name"/>
+                      </li>
+                      <li>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" />
+                      </li>
+                      <li>
+                        <label for="comment">Comment</label>
+                        <textarea type="comment" placeholder="Comment" />
+                        </textarea>
+                      </li>
+                 
+                    </ul>
+                  </fieldset>
+                </form>
+              </div>
+              
+             <?php
+			 	//im folgenden wird die GalleryImageComment gerendert
+			 	$comments = $this->GetComments();
+				foreach($comments as $comment){
+					echo $comment->Render();
+				}
+			   ?>
+                		</div>
+           	</div>
+          </div>
+          <!--row end--> 
+    

@@ -1,0 +1,97 @@
+/* 	Title:			Comment CSS
+	Description: 	Eigenschaften für die Kommentare
+	Author:			Daniel Swiatek
+	Matrikel-Nr.	530805
+ */
+
+@charset "UTF-8";
+/* Comment */
+
+.comment {
+	margin-top: 20px;
+}
+.commentTextWrapper {
+	margin: 20px 0 20px 0;
+}
+.commentMeta {
+	border-bottom: 2px dotted;
+	margin-bottom: 10px;
+	color: #444;
+}
+.form-action {
+	padding: 0 20px;
+	position: relative;
+}
+.form-action p {
+	padding-bottom: 10px;
+	line-height: 25px;
+}
+form {
+	padding-right: 20px !important;
+}
+form input[type=name], form textarea[type=comment], form input[type=email] {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	background: #fff;
+	border: 1px solid #16a085;
+	color: #16a085;
+	outline: none;
+	resize: none;
+}
+form textarea[type=comment] {
+	height: 100px;
+	padding-top: 15px;
+	padding-bottom: -15px;
+}
+.form-action {
+	position: absolute;
+	right: 0;
+	bottom: -24px;
+}
+
+fieldset{
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+label{
+	display:none;
+}
+
+.button {
+	border: none;
+	display: block;
+	border: 1px solid #16a085;
+	background: none;
+	height: 40px;
+	width: 100px;
+	color: #16a085;
+	text-align: center;
+	margin-bottom:10px;
+}
+
+.button:hover {
+	background: #16a085;
+	color: #fff;
+}
+.button:active {
+	background: #0D6050;
+}
+
+::-webkit-input-placeholder {
+ color: #16a085;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #16a085;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #16a085;
+}
+:-ms-input-placeholder {
+ color: #16a085;
+}

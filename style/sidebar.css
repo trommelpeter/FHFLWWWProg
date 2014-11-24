@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* 	Title: 			Sidebar CSS
+	Description: 	Styles für die Sidebar
+	Author:			Daniel Swiatek
+	Matrikel-Nr.	530805
+ */
+
+.sidebar {
+	width: 290px;
+	bottom: 0;
+	border: none;
+	position:relative;
+	float:left;
+}
+.widget {
+	border-top: 1px solid #f1f4f9;
+	padding: 30px 20px;
+	margin: 0 0 10px 0;
+	width: auto;
+	float: none;
+	background: rgba(255,255,255,.5);
+	font-size:0.9em;
+}
+
+@media (max-width:800px){
+	.sidebar{
+		width:100%;
+	}
+}

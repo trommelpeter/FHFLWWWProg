@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@charset "UTF-8";
+/* 	Title:			Body CSS
+	Description: 	Grundeigenschaften
+	Author:			Daniel Swiatek
+	Matrikel-Nr.	530805
+ */
+ 
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h2, ul, li, a, .wrapper {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.container {
+	background: #ecf0f1;
+	/* padding: 30px; */
+	overflow:hidden;
+	position:relative;
+	width: 100%;
+}
+.content {
+	background: #fff;
+	/* padding: 30px; */
+	/* overflow:hidden; */
+	width: 70%;
+	float:left;
+	padding: :30px;
+	
+}
+
+wrapper{
+	overflow:hidden;
+}
+
+h2 {
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+

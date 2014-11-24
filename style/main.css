@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* 	Title:			Main CSS
+	Description: 	Hier werden die einzelnen CSS Datein eingebunden
+	Author:			Daniel Swiatek
+	Matrikel-Nr.	530805
+ */
+ 
+@import 'body.css';
+@import 'header.css';
+@import 'sidebar.css';
+@import 'footer.css';
+@import 'comment.css';

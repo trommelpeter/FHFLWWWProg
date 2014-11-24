@@ -1,0 +1,13 @@
+ <?php 
+$ImagesData = $this->Get();
+ ?>
+ <h2> Menü </h2>
+<div class="col-12">
+	<?php foreach($ImagesData as $Item){ ?> 
+	<div class="thumb"><a href="?ImgUiD=<?php echo $Item->Getuid() ?>"><img src="<?php echo $Item->Getpath() ?>"  title="<?php echo $Item->Gettitle() ?>" width=" 100%" alt="<?php echo $Item->Gettitle() ?>"/>
+    
+    	<div class="thumbcaption"><?php echo $Item->Gettitle() ?></div>
+	</div>
+	<?php 
+	}?>         
+</div>

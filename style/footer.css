@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 	Title:			Footer CSS
+	Description: 	Eigenschaften aus dem Footer
+	Author:			Daniel Swiatek
+	Matrikel-Nr.	530805
+ */
+
+.footer {
+	min-height: 60px;
+	overflow: hidden;
+	background: #0D6050;
+	color: #16a085;
+	/*bottom: 0;
+	position: absolute;
+	*/width: 100%;
+}
+.footer > .copy {
+	font-weight: 100;
+	font-size: 1em;
+	float: left;
+	padding: 20px;
+	margin-left: 10px;
+}
+.footer >.nav {
+	float: right;
+	padding: 0 30px 0 0;
+	font-size:0.9em;
+}
+.footer > .nav li {
+	list-style: none;
+	float: right;
+	padding: 22px 15px;
+}
+.footer > .nav li:hover {
+	color: #fff;
+}
